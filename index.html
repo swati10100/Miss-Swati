@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SilkRoute — Premium Cloth Showroom</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#home" class="logo" onclick="showPage('home')">
+      <span class="logo-mark">SR</span>
+      <span class="logo-text">SilkRoute</span>
+    </a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#" onclick="showPage('home')" data-page="home" class="nav-link active">Home</a></li>
+      <li><a href="#" onclick="showPage('about')" data-page="about" class="nav-link">About</a></li>
+      <li><a href="#" onclick="showPage('pricing')" data-page="pricing" class="nav-link">Pricing</a></li>
+      <li><a href="#" onclick="showPage('contact')" data-page="contact" class="nav-link">Contact</a></li>
+    </ul>
+    <button class="nav-cta" onclick="showPage('contact')">Book a Visit</button>
+    <button class="burger" id="burger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ===== HOME PAGE ===== -->
+<div id="page-home" class="page active">
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="hero-weave"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal">Lucknow · Since 1987</p>
+      <h1 class="hero-headline reveal">Fabric that holds<br><em>memory</em></h1>
+      <p class="hero-sub reveal">Hand-selected silks, heritage cottons, and artisan weaves —<br>curated for those who know the difference.</p>
+      <div class="hero-actions reveal">
+        <button class="btn-primary" onclick="showPage('pricing')">Explore Collections</button>
+        <button class="btn-ghost" onclick="showPage('about')">Our Story</button>
+      </div>
+    </div>
+    <div class="hero-scroll-hint reveal">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <span>Banarasi Silk</span><span class="dot">·</span>
+      <span>Chanderi Cotton</span><span class="dot">·</span>
+      <span>Lucknowi Chikankari</span><span class="dot">·</span>
+      <span>Pure Wool</span><span class="dot">·</span>
+      <span>Kerala Kasavu</span><span class="dot">·</span>
+      <span>Kanjivaram</span><span class="dot">·</span>
+      <span>Ikat Weaves</span><span class="dot">·</span>
+      <span>Organza</span><span class="dot">·</span>
+      <span>Banarasi Silk</span><span class="dot">·</span>
+      <span>Chanderi Cotton</span><span class="dot">·</span>
+      <span>Lucknowi Chikankari</span><span class="dot">·</span>
+      <span>Pure Wool</span><span class="dot">·</span>
+      <span>Kerala Kasavu</span><span class="dot">·</span>
+      <span>Kanjivaram</span><span class="dot">·</span>
+      <span>Ikat Weaves</span><span class="dot">·</span>
+      <span>Organza</span><span class="dot">·</span>
+    </div>
+  </div>
+
+  <!-- CATEGORIES -->
+  <section class="section categories-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">What we carry</p>
+        <h2 class="section-title">Curated by hand,<br>woven with purpose</h2>
+      </div>
+      <div class="categories-grid">
+        <div class="cat-card reveal" style="--delay:0.05s">
+          <div class="cat-img cat-silk">
+            <div class="cat-pattern"></div>
+          </div>
+          <div class="cat-info">
+            <h3>Silks</h3>
+            <p>Banarasi, Kanjivaram, Mysore, raw tussar — sourced directly from weavers.</p>
+            <a href="#" class="cat-link" onclick="showPage('pricing')">Browse silks →</a>
+          </div>
+        </div>
+        <div class="cat-card reveal" style="--delay:0.1s">
+          <div class="cat-img cat-cotton">
+            <div class="cat-pattern"></div>
+          </div>
+          <div class="cat-info">
+            <h3>Cottons</h3>
+            <p>Khadi, Chanderi, mulmul, jamdani — breathable heritage weaves for every season.</p>
+            <a href="#" class="cat-link" onclick="showPage('pricing')">Browse cottons →</a>
+          </div>
+        </div>
+        <div class="cat-card reveal" style="--delay:0.15s">
+          <div class="cat-img cat-ethnic">
+            <div class="cat-pattern"></div>
+          </div>
+          <div class="cat-info">
+            <h3>Ethnic prints</h3>
+            <p>Block prints, ajrakh, bandhani, batik — regional craft traditions in fabric form.</p>
+            <a href="#" class="cat-link" onclick="showPage('pricing')">Browse prints →</a>
+          </div>
+        </div>
+        <div class="cat-card reveal" style="--delay:0.2s">
+          <div class="cat-img cat-wool">
+            <div class="cat-pattern"></div>
+          </div>
+          <div class="cat-info">
+            <h3>Wools & blends</h3>
+            <p>Pashmina, merino, woolen tweeds, and smart suiting blends for tailored looks.</p>
+            <a href="#" class="cat-link" onclick="showPage('pricing')">Browse wools →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item reveal" style="--delay:0s">
+          <span class="stat-num" data-target="37">0</span>
+          <span class="stat-suffix">yrs</span>
+          <p class="stat-label">Established presence</p>
+        </div>
+        <div class="stat-item reveal" style="--delay:0.08s">
+          <span class="stat-num" data-target="1200">0</span>
+          <span class="stat-suffix">+</span>
+          <p class="stat-label">Fabric varieties in stock</p>
+        </div>
+        <div class="stat-item reveal" style="--delay:0.16s">
+          <span class="stat-num" data-target="48">0</span>
+          <span class="stat-suffix">k+</span>
+          <p class="stat-label">Satisfied customers</p>
+        </div>
+        <div class="stat-item reveal" style="--delay:0.24s">
+          <span class="stat-num" data-target="18">0</span>
+          <span class="stat-suffix"></span>
+          <p class="stat-label">States we deliver to</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CRAFT STORY -->
+  <section class="section craft-section">
+    <div class="container">
+      <div class="craft-row reveal">
+        <div class="craft-visual craft-v1">
+          <div class="craft-frame">
+            <div class="craft-inner-pattern"></div>
+            <p class="craft-caption">Banarasi loom, Varanasi</p>
+          </div>
+        </div>
+        <div class="craft-text">
+          <p class="section-eyebrow">The source</p>
+          <h2 class="section-title">We visit every weaver<br>before we list their work</h2>
+          <p class="body-text">Each fabric in our showroom begins with a conversation — with the artisan, the loom, the region. We travel to Varanasi for silk, Bhuj for Ajrakh, and Pochampally for Ikat. Traceability is not a buzzword here; it is how we buy.</p>
+          <button class="btn-outline" onclick="showPage('about')">About our sourcing</button>
+        </div>
+      </div>
+      <div class="craft-row craft-row-reverse reveal">
+        <div class="craft-visual craft-v2">
+          <div class="craft-frame">
+            <div class="craft-inner-pattern-2"></div>
+            <p class="craft-caption">Chikankari workshop, Lucknow</p>
+          </div>
+        </div>
+        <div class="craft-text">
+          <p class="section-eyebrow">The craft</p>
+          <h2 class="section-title">Some patterns take<br>six months to weave</h2>
+          <p class="body-text">A full Banarasi saree border can take a master weaver three weeks. The hours embedded in fine fabric are what make it irreplaceable. We price fairly — to the customer, and to the craftsperson — because one cannot exist without the other.</p>
+          <button class="btn-outline" onclick="showPage('pricing')">See our pricing</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section testimonials-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">From our customers</p>
+        <h2 class="section-title">What people say</h2>
+      </div>
+      <div class="testi-grid">
+        <div class="testi-card reveal" style="--delay:0.05s">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-quote">"I have been buying Banarasi silk here for my daughter's wedding trousseau for twenty years. The quality hasn't changed. That consistency is rare."</p>
+          <div class="testi-person">
+            <div class="testi-avatar">SS</div>
+            <div>
+              <p class="testi-name">Sunita Srivastava</p>
+              <p class="testi-role">Loyal customer since 2004</p>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card reveal" style="--delay:0.1s">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-quote">"As a boutique owner I've sourced from many vendors. SilkRoute is the only one where the fabric matches the sample — every single time."</p>
+          <div class="testi-person">
+            <div class="testi-avatar">RV</div>
+            <div>
+              <p class="testi-name">Radhika Verma</p>
+              <p class="testi-role">Boutique owner, Delhi</p>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card reveal" style="--delay:0.15s">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-quote">"The staff knew the GSM, the dye process, and the wash care of every fabric I asked about. That knowledge is what trust is built on."</p>
+          <div class="testi-person">
+            <div class="testi-avatar">AM</div>
+            <div>
+              <p class="testi-name">Aditya Mehta</p>
+              <p class="testi-role">Fashion designer, Mumbai</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOME CTA -->
+  <section class="home-cta-section reveal">
+    <div class="container">
+      <div class="home-cta-inner">
+        <h2>Ready to feel the difference?</h2>
+        <p>Visit our showroom in Lucknow or request swatches by post.</p>
+        <div class="cta-btns">
+          <button class="btn-primary" onclick="showPage('contact')">Book a showroom visit</button>
+          <button class="btn-ghost-dark" onclick="showPage('pricing')">View pricing</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+<!-- END HOME -->
+
+
+<!-- ===== ABOUT PAGE ===== -->
+<div id="page-about" class="page">
+  <section class="page-hero">
+    <div class="container">
+      <p class="page-eyebrow reveal">Our story</p>
+      <h1 class="page-headline reveal">Three generations.<br>One <em>obsession</em>.</h1>
+      <p class="page-sub reveal">SilkRoute began in 1987 when Ramesh Gupta walked into Varanasi's weaving quarter with ₹12,000 and an eye for cloth. What started as a single shelf in a shared shop is now Lucknow's most trusted fabric destination.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="timeline">
+        <div class="tl-item reveal">
+          <div class="tl-year">1987</div>
+          <div class="tl-body">
+            <h3>The first bolt of silk</h3>
+            <p>Ramesh Gupta sources six bolts of Banarasi silk on credit from a weaver he met at a marriage. Sells them all within a week from the footpath outside Aminabad market.</p>
+          </div>
+        </div>
+        <div class="tl-item reveal" style="--delay:0.08s">
+          <div class="tl-year">1994</div>
+          <div class="tl-body">
+            <h3>First showroom opens</h3>
+            <p>A 400 sq ft shop in Hazratganj. The name SilkRoute is chosen because the fabrics travel from Varanasi, Bhuj, Pochampally — all ancient trade routes.</p>
+          </div>
+        </div>
+        <div class="tl-item reveal" style="--delay:0.16s">
+          <div class="tl-year">2003</div>
+          <div class="tl-body">
+            <h3>Second generation joins</h3>
+            <p>Son Vikram Gupta brings computer cataloguing, direct-to-boutique wholesale, and expands the cotton and ethnic print range by 400%.</p>
+          </div>
+        </div>
+        <div class="tl-item reveal" style="--delay:0.24s">
+          <div class="tl-year">2015</div>
+          <div class="tl-body">
+            <h3>Weaver partnership programme</h3>
+            <p>SilkRoute begins paying weavers 30-day advances — radical in the industry — reducing their debt dependence and locking in quality supply.</p>
+          </div>
+        </div>
+        <div class="tl-item reveal" style="--delay:0.32s">
+          <div class="tl-year">2024</div>
+          <div class="tl-body">
+            <h3>Third generation, new chapter</h3>
+            <p>Ananya Gupta digitises inventory, launches pan-India swatch delivery, and opens the fabric visualiser — while keeping the showroom's soul intact.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section values-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">What guides us</p>
+        <h2 class="section-title">We have three rules</h2>
+      </div>
+      <div class="values-grid">
+        <div class="value-card reveal" style="--delay:0.05s">
+          <div class="value-icon">⟢</div>
+          <h3>Source honestly</h3>
+          <p>We visit every weaver. We know their names, their families, their loom counts. No middlemen, no mystery origins.</p>
+        </div>
+        <div class="value-card reveal" style="--delay:0.12s">
+          <div class="value-icon">⟣</div>
+          <h3>Price fairly</h3>
+          <p>Transparent per-metre pricing, always. The artisan gets paid first. That cost is reflected honestly in what you pay.</p>
+        </div>
+        <div class="value-card reveal" style="--delay:0.19s">
+          <div class="value-icon">⟤</div>
+          <h3>Educate, don't sell</h3>
+          <p>Our staff are trained to tell you the truth about a fabric — even if the truth is "this isn't right for your purpose."</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="team-section section">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">The people</p>
+        <h2 class="section-title">Who you will meet</h2>
+      </div>
+      <div class="team-grid">
+        <div class="team-card reveal" style="--delay:0.05s">
+          <div class="team-avatar ta-1">RG</div>
+          <h3>Ramesh Gupta</h3>
+          <p class="team-role">Founder & silk buyer</p>
+          <p class="team-bio">Still visits Varanasi twice a year. Has never used a spreadsheet. Identifies fake silk by touch in under two seconds.</p>
+        </div>
+        <div class="team-card reveal" style="--delay:0.1s">
+          <div class="team-avatar ta-2">VG</div>
+          <h3>Vikram Gupta</h3>
+          <p class="team-role">MD & wholesale head</p>
+          <p class="team-bio">Manages relationships with 140+ boutique buyers across India. Believes fabric pricing is a moral act, not a margin calculation.</p>
+        </div>
+        <div class="team-card reveal" style="--delay:0.15s">
+          <div class="team-avatar ta-3">AG</div>
+          <h3>Ananya Gupta</h3>
+          <p class="team-role">Director & digital lead</p>
+          <p class="team-bio">NID graduate. Built the swatch-by-post programme. Working on a digital fabric archive of every weave in the showroom.</p>
+        </div>
+        <div class="team-card reveal" style="--delay:0.2s">
+          <div class="team-avatar ta-4">SK</div>
+          <h3>Sundar Khanna</h3>
+          <p class="team-role">Senior fabric consultant</p>
+          <p class="team-bio">24 years at SilkRoute. Speaks seven languages, all of them fabric. Ask him anything about cotton GSM and be prepared for a long, wonderful answer.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<!-- END ABOUT -->
+
+
+<!-- ===== PRICING PAGE ===== -->
+<div id="page-pricing" class="page">
+  <section class="page-hero">
+    <div class="container">
+      <p class="page-eyebrow reveal">Transparent pricing</p>
+      <h1 class="page-headline reveal">What fine fabric<br><em>actually</em> costs</h1>
+      <p class="page-sub reveal">Per-metre retail pricing, no hidden charges. Wholesale rates available for boutiques and designers — contact us for a trade account.</p>
+    </div>
+  </section>
+
+  <!-- BILLING TOGGLE -->
+  <div class="container">
+    <div class="billing-row reveal">
+      <span class="bill-label active" id="lbl-retail" onclick="setBilling('retail')">Retail</span>
+      <div class="toggle-track" id="billing-toggle" onclick="toggleBilling()" role="switch" aria-checked="false">
+        <div class="toggle-thumb"></div>
+      </div>
+      <span class="bill-label" id="lbl-wholesale" onclick="setBilling('wholesale')">Wholesale</span>
+      <span class="save-pill">Save 30%</span>
+    </div>
+  </div>
+
+  <!-- PRICING CARDS -->
+  <section class="section">
+    <div class="container">
+      <div class="pricing-grid">
+        <div class="price-card reveal" style="--delay:0.05s">
+          <div class="pc-icon pc-silk">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><path d="M8 12c0-2.21 1.79-4 4-4s4 1.79 4 4-1.79 4-4 4-4-1.79-4-4z"/></svg>
+          </div>
+          <h3 class="pc-name">Banarasi silk</h3>
+          <p class="pc-desc">Pure mulberry silk with zari border. Available in 120+ colour combinations.</p>
+          <div class="pc-price-row">
+            <span class="pc-currency">₹</span>
+            <span class="pc-amount" data-retail="2400" data-wholesale="1680">2,400</span>
+            <span class="pc-per">/metre</span>
+          </div>
+          <p class="pc-note" data-retail="Min. 2 metres" data-wholesale="Min. 12 metres · Trade only">Min. 2 metres</p>
+          <hr class="pc-divider">
+          <ul class="pc-features">
+            <li>Pure mulberry silk base</li>
+            <li>Handwoven zari border</li>
+            <li>120+ colour options</li>
+            <li>Fabric cert. included</li>
+          </ul>
+          <button class="pc-btn" onclick="showPage('contact')">Request swatches</button>
+        </div>
+
+        <div class="price-card price-card-featured reveal" style="--delay:0.1s">
+          <span class="pc-badge">Most popular</span>
+          <div class="pc-icon pc-cotton">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22V12M12 12C12 7 7 4 7 4s0 5 5 8zM12 12c0-5 5-8 5-8s0 5-5 8z"/></svg>
+          </div>
+          <h3 class="pc-name">Chanderi cotton</h3>
+          <p class="pc-desc">Lightweight with a natural sheen. Perfect for kurtas, sarees, and summer suits.</p>
+          <div class="pc-price-row">
+            <span class="pc-currency">₹</span>
+            <span class="pc-amount" data-retail="780" data-wholesale="546">780</span>
+            <span class="pc-per">/metre</span>
+          </div>
+          <p class="pc-note" data-retail="Min. 1 metre" data-wholesale="Min. 20 metres · Trade only">Min. 1 metre</p>
+          <hr class="pc-divider">
+          <ul class="pc-features">
+            <li>100% cotton with silk warp</li>
+            <li>Hand block-print available</li>
+            <li>60+ colour options</li>
+            <li>GI-certified origin</li>
+          </ul>
+          <button class="pc-btn pc-btn-featured" onclick="showPage('contact')">Request swatches</button>
+        </div>
+
+        <div class="price-card reveal" style="--delay:0.15s">
+          <div class="pc-icon pc-ethnic">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+          </div>
+          <h3 class="pc-name">Ajrakh block print</h3>
+          <p class="pc-desc">Natural dye Ajrakh from Kutch. Each piece unique. Mordant-printed on cotton.</p>
+          <div class="pc-price-row">
+            <span class="pc-currency">₹</span>
+            <span class="pc-amount" data-retail="1100" data-wholesale="770">1,100</span>
+            <span class="pc-per">/metre</span>
+          </div>
+          <p class="pc-note" data-retail="Min. 2.5 metres" data-wholesale="Min. 10 metres · Trade only">Min. 2.5 metres</p>
+          <hr class="pc-divider">
+          <ul class="pc-features">
+            <li>Natural indigo & madder dye</li>
+            <li>Hand block-printed</li>
+            <li>GI-certified, Kutch origin</li>
+            <li>Each piece one-of-a-kind</li>
+          </ul>
+          <button class="pc-btn" onclick="showPage('contact')">Request swatches</button>
+        </div>
+
+        <div class="price-card reveal" style="--delay:0.2s">
+          <div class="pc-icon pc-pashmina">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+          </div>
+          <h3 class="pc-name">Pure pashmina</h3>
+          <p class="pc-desc">Grade-A Ladakhi pashmina. 14–16 micron fibre. Certified by Craft Development Institute.</p>
+          <div class="pc-price-row">
+            <span class="pc-currency">₹</span>
+            <span class="pc-amount" data-retail="5800" data-wholesale="4060">5,800</span>
+            <span class="pc-per">/metre</span>
+          </div>
+          <p class="pc-note" data-retail="Min. 1 metre" data-wholesale="Min. 5 metres · Trade only">Min. 1 metre</p>
+          <hr class="pc-divider">
+          <ul class="pc-features">
+            <li>14–16 micron fibre</li>
+            <li>CDI-certified authenticity</li>
+            <li>Hand-spun, hand-woven</li>
+            <li>Certificate of origin</li>
+          </ul>
+          <button class="pc-btn" onclick="showPage('contact')">Request swatches</button>
+        </div>
+
+        <div class="price-card reveal" style="--delay:0.25s">
+          <div class="pc-icon pc-khadi">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+          </div>
+          <h3 class="pc-name">Handspun khadi</h3>
+          <p class="pc-desc">Khadi India certified. 40-count hand-spun yarn. Available in natural undyed and organic colours.</p>
+          <div class="pc-price-row">
+            <span class="pc-currency">₹</span>
+            <span class="pc-amount" data-retail="420" data-wholesale="294">420</span>
+            <span class="pc-per">/metre</span>
+          </div>
+          <p class="pc-note" data-retail="Min. 3 metres" data-wholesale="Min. 25 metres · Trade only">Min. 3 metres</p>
+          <hr class="pc-divider">
+          <ul class="pc-features">
+            <li>Khadi India certified</li>
+            <li>40-count hand-spun</li>
+            <li>Natural & organic colours</li>
+            <li>Carbon-negative production</li>
+          </ul>
+          <button class="pc-btn" onclick="showPage('contact')">Request swatches</button>
+        </div>
+
+        <div class="price-card price-card-trade reveal" style="--delay:0.3s">
+          <span class="pc-badge pc-badge-trade">Trade accounts</span>
+          <div class="pc-icon pc-trade">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+          </div>
+          <h3 class="pc-name">Wholesale & boutique</h3>
+          <p class="pc-desc">Bespoke pricing for designers, boutiques, and garment manufacturers. Volume-based tiers, credit terms, and dedicated account manager.</p>
+          <div class="pc-price-row">
+            <span class="pc-per" style="font-size:15px;color:var(--gold)">Custom pricing</span>
+          </div>
+          <p class="pc-note">Typically 25–40% below retail</p>
+          <hr class="pc-divider">
+          <ul class="pc-features">
+            <li>Dedicated account manager</li>
+            <li>30-day credit terms</li>
+            <li>Priority stock allocation</li>
+            <li>Seasonal preview access</li>
+          </ul>
+          <button class="pc-btn pc-btn-trade" onclick="showPage('contact')">Apply for trade account</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq-section section">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Questions</p>
+        <h2 class="section-title">Common questions</h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item reveal" style="--delay:0.05s">
+          <button class="faq-q" onclick="toggleFaq(this)">Do you ship fabric samples?<span class="faq-arrow">↓</span></button>
+          <div class="faq-a"><p>Yes — we send swatch sets by post for ₹99 (credited toward your first order). Request swatches for any fabric via the contact form.</p></div>
+        </div>
+        <div class="faq-item reveal" style="--delay:0.1s">
+          <button class="faq-q" onclick="toggleFaq(this)">What is your minimum order quantity?<span class="faq-arrow">↓</span></button>
+          <div class="faq-a"><p>Retail minimums vary by fabric (typically 1–3 metres) and are shown on each product. Wholesale minimums are listed under trade pricing above.</p></div>
+        </div>
+        <div class="faq-item reveal" style="--delay:0.15s">
+          <button class="faq-q" onclick="toggleFaq(this)">How do I verify fabric authenticity?<span class="faq-arrow">↓</span></button>
+          <div class="faq-a"><p>GI-certified fabrics come with their certification. We also provide a fabric information sheet for every purchase listing the origin, fibre content, dye process, and care instructions.</p></div>
+        </div>
+        <div class="faq-item reveal" style="--delay:0.2s">
+          <button class="faq-q" onclick="toggleFaq(this)">Can you source a specific fabric I've seen elsewhere?<span class="faq-arrow">↓</span></button>
+          <div class="faq-a"><p>Often, yes. Bring a swatch or a photo to the showroom and our team will assess whether we can source it. We have contacts at most major weaving centres in India.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<!-- END PRICING -->
+
+
+<!-- ===== CONTACT PAGE ===== -->
+<div id="page-contact" class="page">
+  <section class="page-hero">
+    <div class="container">
+      <p class="page-eyebrow reveal">Get in touch</p>
+      <h1 class="page-headline reveal">Come and feel<br>the <em>fabric</em>.</h1>
+      <p class="page-sub reveal">The showroom is open six days a week. Or write to us and we'll get back within one working day.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="contact-layout">
+        <div class="contact-info reveal">
+          <div class="info-block">
+            <p class="info-label">Address</p>
+            <p class="info-value">12-A, Hazratganj Market<br>Lucknow, Uttar Pradesh 226001</p>
+          </div>
+          <div class="info-block">
+            <p class="info-label">Hours</p>
+            <p class="info-value">Mon – Sat, 10:00 am – 8:00 pm<br>Sunday closed</p>
+          </div>
+          <div class="info-block">
+            <p class="info-label">Phone</p>
+            <p class="info-value">+91 98765 43210</p>
+          </div>
+          <div class="info-block">
+            <p class="info-label">Email</p>
+            <p class="info-value">hello@silkroute.in</p>
+          </div>
+          <div class="info-block">
+            <p class="info-label">WhatsApp</p>
+            <p class="info-value">+91 98765 43210<br><span class="wa-note">Quickest for swatch requests</span></p>
+          </div>
+          <div class="map-placeholder reveal">
+            <div class="map-inner">
+              <p>📍 Hazratganj, Lucknow</p>
+              <p class="map-sub">Open in Google Maps →</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap reveal" style="--delay:0.1s">
+          <form class="contact-form" onsubmit="handleSubmit(event)">
+            <h2 class="form-title">Send us a message</h2>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Your name</label>
+                <input type="text" placeholder="Priya Sharma" required>
+              </div>
+              <div class="form-group">
+                <label>Email</label>
+                <input type="email" placeholder="priya@example.com" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Phone (optional)</label>
+              <input type="tel" placeholder="+91 98765 43210">
+            </div>
+            <div class="form-group">
+              <label>What are you looking for?</label>
+              <select>
+                <option value="">Select a category</option>
+                <option>Silk fabrics</option>
+                <option>Cotton fabrics</option>
+                <option>Ethnic prints</option>
+                <option>Wool / Pashmina</option>
+                <option>Wholesale / Trade account</option>
+                <option>Swatch samples</option>
+                <option>Something else</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Message</label>
+              <textarea rows="4" placeholder="Tell us what you need — fabric type, occasion, quantity, or just say hello."></textarea>
+            </div>
+            <button type="submit" class="btn-primary btn-full">Send message</button>
+            <p class="form-note">We reply within one working day. For urgent queries, WhatsApp is fastest.</p>
+          </form>
+          <div class="form-success" id="form-success">
+            <div class="success-icon">✓</div>
+            <h3>Message sent</h3>
+            <p>We'll get back to you within one working day. Thank you.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<!-- END CONTACT -->
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <span class="logo-mark">SR</span>
+          <span class="logo-text">SilkRoute</span>
+        </div>
+        <p class="footer-tagline">Premium cloth showroom, Lucknow.<br>Sourced honestly. Priced fairly.</p>
+        <div class="footer-socials">
+          <a href="#" aria-label="Instagram">Ig</a>
+          <a href="#" aria-label="Facebook">Fb</a>
+          <a href="#" aria-label="WhatsApp">Wa</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <p class="footer-col-title">Explore</p>
+        <ul>
+          <li><a href="#" onclick="showPage('home')">Home</a></li>
+          <li><a href="#" onclick="showPage('about')">About</a></li>
+          <li><a href="#" onclick="showPage('pricing')">Pricing</a></li>
+          <li><a href="#" onclick="showPage('contact')">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <p class="footer-col-title">Fabrics</p>
+        <ul>
+          <li><a href="#">Banarasi silk</a></li>
+          <li><a href="#">Chanderi cotton</a></li>
+          <li><a href="#">Ajrakh prints</a></li>
+          <li><a href="#">Pashmina</a></li>
+          <li><a href="#">Handspun khadi</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <p class="footer-col-title">Visit us</p>
+        <p class="footer-address">12-A, Hazratganj Market<br>Lucknow, UP 226001</p>
+        <p class="footer-address">Mon–Sat · 10 am–8 pm</p>
+        <p class="footer-address">+91 98765 43210</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 SilkRoute. All rights reserved.</p>
+      <p>Made with care in Lucknow.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
